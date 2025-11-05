@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lexis Academy</title>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <!-- Подключение иконок -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Подключение swiper кодов -->
+    <script src="./js/companies.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img
+            src="./imgs/header-logo.png"
+            alt="Логотип"
+            class="header__icon"
+          />
+        </div>
+
+        <button class="header__menu-btn" aria-label="Открыть меню">
+          <i class="fa-solid fa-bars"></i>Меню
+        </button>
+      </div>
+    </header>
+    <div class="promo">
+      <div class="promo__context">
+        <p class="promo__context-title">
+          Учись, общайся, путешествуй без границ!
+        </p>
+        <p class="promo__context-subtitle">
+          4 языка — 1 школа, 1000 возможностей
+        </p>
+        <button class="promo__context-btn">Записаться на пробный урок</button>
+      </div>
+      <div class="promo__flags">
+        <img src="./imgs/england_icon.png" alt="флаг Великобретании" />
+        <img src="./imgs/korea_icon.png" alt="флаг Кореии" />
+        <img src="./imgs/china_icon.png" alt="флаг Китая" />
+        <img src="./imgs/germany_icon.png" alt="флаг Германии" />
+      </div>
+    </div>
+    <div class="languages">
+      <div class="languages__england">
+        <div class="languages__content">
+          <p class="languages__card-title">Английский язык</p>
+          <button class="languages__card-btn">Подробнее</button>
+        </div>
+      </div>
+      <div class="languages__china">
+        <div class="languages__content">
+          <p class="languages__card-title">Китайский язык</p>
+          <button class="languages__card-btn">Подробнее</button>
+        </div>
+      </div>
+      <div class="languages__korea">
+        <div class="languages__content">
+          <p class="languages__card-title">Корейский язык</p>
+          <button class="languages__card-btn">Подробнее</button>
+        </div>
+      </div>
+      <div class="languages__germany">
+        <div class="languages__content">
+          <p class="languages__card-title">Немецкий язык</p>
+          <button class="languages__card-btn">Подробнее</button>
+        </div>
+      </div>
+    </div>
+    <section id="about">
+      <img src="./imgs/about_promo.png" alt="" />
+      <div class="about__content">
+        <p class="about__content-title"><span>Об</span> Lexis Academy</p>
+        <p class="about__content-context">
+          Мы — международная школа языков, где обучение становится вдохновением.
+          <br />
+          <br />
+          Наши преподаватели — сертифицированные специалисты с международным
+          опытом. Мы верим, что язык — это инструмент, который открывает новые
+          страны, людей и возможности.
+        </p>
+        <div class="about__content-items">
+          <i class="fa-solid fa-check"></i>
+          <p>Более 3000 студентов уже заговорили на иностранном!</p>
+        </div>
+        <div class="about__content-items">
+          <i class="fa-solid fa-check"></i>
+          <p>Онлайн и офлайн-формат</p>
+        </div>
+        <div class="about__content-items">
+          <i class="fa-solid fa-check"></i>
+          <p>Индивидуальные и групповые занятия</p>
+        </div>
+      </div>
+    </section>
+    <section id="companies">
+      <div class="section__titles">
+        <span>С нами изучают английский</span><br />
+        топовые компании в разных нишах
+      </div>
+      <div class="companies_wrap swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide company">
+            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          </div>
+          <div class="company swiper-slide">
+            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          </div>
+          <div class="company swiper-slide">
+            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          </div>
+          <div class="company swiper-slide">
+            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          </div>
+          <div class="company swiper-slide">
+            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          </div>
+          <div class="company swiper-slide">
+            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          </div>
+          <div class="company swiper-slide">
+            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          </div>
+          <div class="company swiper-slide">
+            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
