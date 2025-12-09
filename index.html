@@ -1,11 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lexis Academy</title>
 
-    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- Стили -->
+    <link rel="stylesheet" href="./styles/aboard.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/corporate.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/languages.css" />
+    <link rel="stylesheet" href="./styles/theme.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+
+    <!-- Подключение шрифтов -->
+    <link href="https://fonts.cdnfonts.com/css/akrobat" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Подключение иконок -->
     <link
@@ -18,9 +37,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
-    <!-- Подключение swiper кодов -->
-    <script src="./js/companies.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -32,114 +48,647 @@
             class="header__icon"
           />
         </div>
-
-        <button class="header__menu-btn" aria-label="Открыть меню">
-          <i class="fa-solid fa-bars"></i>Меню
-        </button>
+        <div class="header__actions">
+          <label class="theme-switch">
+            <input type="checkbox" id="theme-switch" />
+            <span class="theme-slider"></span>
+          </label>
+          <button class="header__menu-btn btn" aria-label="Открыть меню">
+            <i class="fa-solid fa-bars"></i> Меню
+          </button>
+          <button class="header__menu-mobile-btn btn" aria-label="Открыть меню">
+            <i class="fa-solid fa-bars"></i> Меню
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li class="has-submenu">
+            <a href="#" class="submenu-toggle">Языки</a>
+            <ul class="submenu">
+              <li><a href="index.html">Русский</a></li>
+              <li><a href="#">Английский</a></li>
+              <li><a href="#">Французский</a></li>
+            </ul>
+          </li>
+          <li><a href="#">О нас</a></li>
+        </ul>
       </div>
     </header>
-    <div class="promo">
+
+    <section id="promo" class="promo english__promo">
       <div class="promo__context">
-        <p class="promo__context-title">
-          Учись, общайся, путешествуй без границ!
-        </p>
+        <h1 class="promo__context-title">
+          Lexis Academy. <br />
+          Курсы английского языка в Астане
+        </h1>
         <p class="promo__context-subtitle">
-          4 языка — 1 школа, 1000 возможностей
+          Лучший образовательный центр для детей, подростков и взрослых –
+          запишитесь на пробный урок!
         </p>
-        <button class="promo__context-btn">Записаться на пробный урок</button>
+        <button class="promo__context-btn btn">
+          Записаться на пробный урок
+        </button>
       </div>
-      <div class="promo__flags">
-        <img src="./imgs/england_icon.png" alt="флаг Великобретании" />
+      <div class="promo__flags flags__mute">
+        <img
+          class="main__flag"
+          src="./imgs/england_icon.png"
+          alt="флаг Великобретании"
+        />
         <img src="./imgs/korea_icon.png" alt="флаг Кореии" />
         <img src="./imgs/china_icon.png" alt="флаг Китая" />
         <img src="./imgs/germany_icon.png" alt="флаг Германии" />
       </div>
-    </div>
-    <div class="languages">
-      <div class="languages__england">
-        <div class="languages__content">
-          <p class="languages__card-title">Английский язык</p>
-          <button class="languages__card-btn">Подробнее</button>
+    </section>
+    <section id="programs">
+      <div class="section__header">
+        <h1 class="section__titles"><span>Программы</span> обучения</h1>
+      </div>
+      <div class="programs__cards">
+        <div class="programs__card">
+          <img src="./imgs/Rectangle 3.png" alt="Курс IELTS" />
+          <p class="programs__card-title">IELTS</p>
+          <p class="programs__card-subtitle">
+            Для краткого описание направления, если оно нужно, если нет, уберем
+            Для краткого описание направления, если оно нужно, если нет, уберем
+            Для краткого описание направления, если оно нужно, если нет, уберем
+          </p>
+          <button class="programs__card-btn btn">Подробнее</button>
+        </div>
+        <div class="programs__card">
+          <img src="./imgs/Rectangle 3.png" alt="Курс IELTS" />
+          <p class="programs__card-title">Студенты / школьники</p>
+          <p class="programs__card-subtitle">
+            Для краткого описание направления, если оно нужно, если нет, уберем
+          </p>
+          <button class="programs__card-btn btn">Подробнее</button>
+        </div>
+        <div class="programs__card">
+          <img src="./imgs/Rectangle 3.png" alt="Курс IELTS" />
+          <p class="programs__card-title">
+            General English <span>(для взрослых)</span>
+          </p>
+          <p class="programs__card-subtitle">
+            Для краткого описание направления, если оно нужно, если нет, уберем
+          </p>
+          <button class="programs__card-btn btn">Подробнее</button>
+        </div>
+        <div class="programs__card">
+          <img src="./imgs/Rectangle 3.png" alt="Курс IELTS" />
+          <p class="programs__card-title">Корпоративный</p>
+          <p class="programs__card-subtitle">
+            Для краткого описание направления, если оно нужно, если нет, уберем
+          </p>
+          <button class="programs__card-btn btn">Подробнее</button>
         </div>
       </div>
-      <div class="languages__china">
-        <div class="languages__content">
-          <p class="languages__card-title">Китайский язык</p>
-          <button class="languages__card-btn">Подробнее</button>
+    </section>
+    <section id="benefits">
+      <div class="section__header">
+        <h1 class="section__titles"><span>Преимущества</span> академии</h1>
+      </div>
+      <div class="benefits__cards">
+        <div class="benefits__card">
+          <img
+            class="benefits__icon"
+            src="./imgs/Mask group.png"
+            alt="Преимущество 1"
+          />
+          <div class="benefits__content">
+            <p class="benefits__title">Живой английский с первого занятия</p>
+            <p class="benefits__description">
+              Наши преподаватели имеют многолетний опыт работы и международные
+              сертификаты.
+            </p>
+          </div>
+        </div>
+        <div class="benefits__card">
+          <img
+            class="benefits__icon"
+            src="./imgs/Mask group.png"
+            alt="Преимущество 1"
+          />
+          <div class="benefits__content">
+            <p class="benefits__title">Живой английский с первого занятия</p>
+            <p class="benefits__description">
+              Наши преподаватели имеют многолетний опыт работы и международные
+              сертификаты. Наши преподаватели имеют многолетний опыт работы и
+              международные Наши преподаватели имеют многолетний опыт работы и
+              международные
+            </p>
+          </div>
+        </div>
+        <div class="benefits__card">
+          <img
+            class="benefits__icon"
+            src="./imgs/Mask group.png"
+            alt="Преимущество 1"
+          />
+          <div class="benefits__content">
+            <p class="benefits__title">Живой английский с первого занятия</p>
+            <p class="benefits__description">
+              Наши преподаватели имеют многолетний опыт работы и международные
+              сертификаты.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="languages__korea">
-        <div class="languages__content">
-          <p class="languages__card-title">Корейский язык</p>
-          <button class="languages__card-btn">Подробнее</button>
+    </section>
+    <section id="methods">
+      <div class="section__header">
+        <h1 class="section__titles"><span>Методика</span> обучения</h1>
+      </div>
+      <div class="methods__cards">
+        <div class="methods__card">
+          <div class="methods__content">
+            <p class="methods__title">Разговорная практика</p>
+            <p class="methods__description">
+              Каждый месяц — мини-тест и обратная связь от преподавателя. Вы
+              всегда знаете, где вы находитесь и к чему двигаться дальше.
+            </p>
+          </div>
+        </div>
+        <div class="methods__card">
+          <img src="./imgs/icon-park-solid_system.png" alt="" />
+          <div class="methods__content">
+            <p class="methods__title white">Разговорная практика</p>
+            <p class="methods__description">
+              Каждый месяц — мини-тест и обратная связь от преподавателя. Вы
+              всегда знаете, где вы находитесь и к чему двигаться дальше.
+            </p>
+          </div>
+        </div>
+        <div class="methods__card">
+          <div class="methods__content">
+            <p class="methods__title">Разговорная практика</p>
+            <p class="methods__description">
+              Каждый месяц — мини-тест и обратная связь от преподавателя. Вы
+              всегда знаете, где вы находитесь и к чему двигаться дальше.
+            </p>
+          </div>
+        </div>
+        <div class="methods__card">
+          <img src="./imgs/icon-park-solid_system.png" alt="" />
+          <div class="methods__content">
+            <p class="methods__title white">Разговорная практика</p>
+            <p class="methods__description">
+              Каждый месяц — мини-тест и обратная связь от преподавателя. Вы
+              всегда знаете, где вы находитесь и к чему двигаться дальше.
+            </p>
+          </div>
+        </div>
+        <div class="methods__card">
+          <div class="methods__content">
+            <p class="methods__title">Разговорная практика</p>
+            <p class="methods__description">
+              Каждый месяц — мини-тест и обратная связь от преподавателя. Вы
+              всегда знаете, где вы находитесь и к чему двигаться дальше.
+            </p>
+          </div>
+        </div>
+        <div class="methods__card">
+          <img src="./imgs/icon-park-solid_system.png" alt="" />
+          <div class="methods__content">
+            <p class="methods__title white">Разговорная практика</p>
+            <p class="methods__description">
+              Каждый месяц — мини-тест и обратная связь от преподавателя. Вы
+              всегда знаете, где вы находитесь и к чему двигаться дальше.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="languages__germany">
-        <div class="languages__content">
-          <p class="languages__card-title">Немецкий язык</p>
-          <button class="languages__card-btn">Подробнее</button>
-        </div>
-      </div>
-    </div>
-    <section id="about">
-      <img src="./imgs/about_promo.png" alt="" />
-      <div class="about__content">
-        <p class="about__content-title"><span>Об</span> Lexis Academy</p>
-        <p class="about__content-context">
-          Мы — международная школа языков, где обучение становится вдохновением.
-          <br />
-          <br />
-          Наши преподаватели — сертифицированные специалисты с международным
-          опытом. Мы верим, что язык — это инструмент, который открывает новые
-          страны, людей и возможности.
+    </section>
+    <section id="trial">
+      <div class="trial__promo"></div>
+      <div class="trial__content">
+        <h1 class="trial__title">Бесплатное <span>занятие</span></h1>
+        <p class="trial__subtitle">
+          Оставьте заявку, наш менеджер свяжется с вами в ближайшее время
         </p>
-        <div class="about__content-items">
-          <i class="fa-solid fa-check"></i>
-          <p>Более 3000 студентов уже заговорили на иностранном!</p>
-        </div>
-        <div class="about__content-items">
-          <i class="fa-solid fa-check"></i>
-          <p>Онлайн и офлайн-формат</p>
-        </div>
-        <div class="about__content-items">
-          <i class="fa-solid fa-check"></i>
-          <p>Индивидуальные и групповые занятия</p>
-        </div>
+        <form class="trial-form" data-form>
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              class="trial-form__input"
+              placeholder="Ваше имя"
+            />
+            <small class="error-text"></small>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              name="age"
+              class="trial-form__input"
+              placeholder="Возраст"
+            />
+            <small class="error-text"></small>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="tel"
+              name="phone"
+              class="trial-form__input"
+              placeholder="+7 (___) ___-__-__"
+            />
+            <small class="error-text"></small>
+          </div>
+
+          <button type="submit" class="trial-form__btn btn" disabled>
+            Записаться на пробный урок
+          </button>
+        </form>
       </div>
     </section>
-    <section id="companies">
-      <div class="section__titles">
-        <span>С нами изучают английский</span><br />
-        топовые компании в разных нишах
+    <section id="teachers">
+      <div class="section__header">
+        <h1 class="section__titles">
+          <span>Преподаватели</span>
+        </h1>
+        <div class="swiper__nav">
+          <button class="swiper__btn teachers__btn--prev">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </button>
+          <button class="swiper__btn teachers__btn--next">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </button>
+        </div>
       </div>
-      <div class="companies_wrap swiper">
+      <div class="teachers__swiper swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide company">
-            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          <div class="swiper-slide teacher__card">
+            <img
+              src="./imgs/Rectangle 4.png"
+              alt="Преподаватель 1"
+              class="teacher__photo"
+            />
+            <p class="teacher__name">Анна Иванова</p>
+            <p class="teacher__position">Преподаватель английского языка</p>
+            <button class="teacher__btn btn">Сертификаты</button>
           </div>
-          <div class="company swiper-slide">
-            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          <div class="swiper-slide teacher__card">
+            <img
+              src="./imgs/Rectangle 4.png"
+              alt="Преподаватель 1"
+              class="teacher__photo"
+            />
+            <p class="teacher__name">Анна Иванова</p>
+            <p class="teacher__position">Преподаватель английского языка</p>
+            <button class="teacher__btn btn">Сертификаты</button>
           </div>
-          <div class="company swiper-slide">
-            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          <div class="swiper-slide teacher__card">
+            <img
+              src="./imgs/Rectangle 4.png"
+              alt="Преподаватель 1"
+              class="teacher__photo"
+            />
+            <p class="teacher__name">Анна Иванова</p>
+            <p class="teacher__position">Преподаватель английского языка</p>
+            <button class="teacher__btn btn">Сертификаты</button>
           </div>
-          <div class="company swiper-slide">
-            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          <div class="swiper-slide teacher__card">
+            <img
+              src="./imgs/Rectangle 4.png"
+              alt="Преподаватель 1"
+              class="teacher__photo"
+            />
+            <p class="teacher__name">Анна Иванова</p>
+            <p class="teacher__position">
+              Краткий текст о преподаватели школы английского языкаКраткий текст
+              о преподавател
+            </p>
+            <button class="teacher__btn btn">Сертификаты</button>
           </div>
-          <div class="company swiper-slide">
-            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
-          </div>
-          <div class="company swiper-slide">
-            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
-          </div>
-          <div class="company swiper-slide">
-            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
-          </div>
-          <div class="company swiper-slide">
-            <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+          <div class="swiper-slide teacher__card">
+            <img
+              src="./imgs/Rectangle 4.png"
+              alt="Преподаватель 1"
+              class="teacher__photo"
+            />
+            <p class="teacher__name">Анна Иванова</p>
+            <p class="teacher__position">
+              Краткий текст о преподаватели школы английского языкаКраткий текст
+              о преподавател
+            </p>
+            <button class="teacher__btn btn">Сертификаты</button>
           </div>
         </div>
       </div>
     </section>
+    <section id="reviews" class="reviews">
+      <div class="section__header">
+        <h1 class="section__titles">
+          <span>Отзывы</span>
+        </h1>
+        <div class="swiper__nav">
+          <button class="swiper__btn reviews__btn--prev">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </button>
+          <button class="swiper__btn reviews__btn--next">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="reviews__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide review__item">
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./imgs/china_icon.png"
+                alt="Фото отзыва"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Данияр 2</p>
+                <p class="review__author-level">уровень A2 → B1</p>
+              </div>
+            </div>
+            <div class="review__content">
+              <p>
+                Учил для работы, но в итоге начал смотреть сериалы без
+                субтитров. Методика — огонь! Учил для работы, но в итоге начал
+                смотреть сериалы без субтитров. Методика — огонь! Учил для
+                работы, но в итоге начал смотреть сериалы без субтитров.
+                Методика — огонь!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide review__item">
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./imgs/china_icon.png"
+                alt="Фото отзыва"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Данияр</p>
+                <p class="review__author-level">уровень A2 → B1</p>
+              </div>
+            </div>
+            <div class="review__content">
+              <p>
+                Учил для работы, но в итоге начал смотреть сериалы без
+                субтитров. Методика — огонь!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide review__item">
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./imgs/china_icon.png"
+                alt="Фото отзыва"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Данияр</p>
+                <p class="review__author-level">уровень A2 → B1</p>
+              </div>
+            </div>
+            <div class="review__content">
+              <p>
+                Учил для работы, но в итоге начал смотреть сериалы без
+                субтитров. Методика — огонь!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide review__item">
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./imgs/china_icon.png"
+                alt="Фото отзыва"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Данияр</p>
+                <p class="review__author-level">уровень A2 → B1</p>
+              </div>
+            </div>
+            <div class="review__content">
+              <p>
+                Учил для работы, но в итоге начал смотреть сериалы без
+                субтитров. Методика — огонь!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="section__header">
+        <h1 class="section__titles">Часто задаваемые <span>вопросы</span></h1>
+        <button class="faq__btn btn">Задать вопрос</button>
+      </div>
+      <div class="faq__content">
+        <div class="faq__item">
+          <div class="faq__item-question">
+            <p>Сколько человек в группе?</p>
+            <button class="faq__toggle">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq__item-answer">
+            <p>
+              В группе от 4 до 8 человек. Мы считаем, что это оптимальное
+              количество для эффективного обучения и взаимодействия между
+              студентами.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__item-question">
+            <p>Сколько человек в группе?</p>
+            <button class="faq__toggle">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq__item-answer">
+            <p>
+              В группе от 4 до 8 человек. Мы считаем, что это оптимальное
+              количество для эффективного обучения и взаимодействия между
+              студентами.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__item-question">
+            <p>Сколько человек в группе?</p>
+            <button class="faq__toggle">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq__item-answer">
+            <p>
+              В группе от 4 до 8 человек. Мы считаем, что это оптимальное
+              количество для эффективного обучения и взаимодействия между
+              студентами.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__item-question">
+            <p>Сколько человек в группе?</p>
+            <button class="faq__toggle">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq__item-answer">
+            <p>
+              В группе от 4 до 8 человек. Мы считаем, что это оптимальное
+              количество для эффективного обучения и взаимодействия между
+              студентами.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main_footer">
+      <div class="footer__container">
+        <a href="index.html" class="header__logo">
+          <img
+            src="./imgs/header-logo.png"
+            alt="Логотип"
+            class="footer__icon"
+          />
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <p>Политика конфиденциальности</p>
+        <p>Пользовательское соглашение</p>
+      </div>
+    </footer>
+
+    <!-- Боковое меню -->
+    <nav class="side-menu">
+      <i class="fa-solid fa-xmark"></i>
+      <ul>
+        <li><a href="#">Главная</a></li>
+
+        <li class="has-submenu">
+          <a href="#" class="submenu-toggle">Языки</a>
+          <ul class="submenu">
+            <li><a href="index.html">Русский</a></li>
+            <li><a href="#">Русский</a></li>
+            <li><a href="#">Русский</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">О нас</a></li>
+      </ul>
+    </nav>
+    <!-- Меню мобилки -->
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li class="has-submenu">
+          <a href="#" class="submenu-toggle">Языки</a>
+          <ul class="submenu">
+            <li><a href="#">Русский</a></li>
+            <li><a href="#">Английский</a></li>
+            <li><a href="#">Французский</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">О нас</a></li>
+      </ul>
+    </div>
+    <!-- Затемнение фона -->
+    <div class="overlay" data-overlay></div>
+
+    <!-- Виджет WhatsApp -->
+    <div class="whatsapp-widjet">
+      <div class="whatsapp-widjet-circle">
+        <div class="whatsapp-widjet-circle-left">
+          <span></span>
+        </div>
+        <div class="whatsapp-widjet-circle-right">
+          <span></span>
+        </div>
+      </div>
+      <a
+        target="_blank"
+        rel="nofollow"
+        href="https://wa.me/+77075036553"
+        class="whatsapp-widjet-icon"
+      >
+        <svg
+          width="13"
+          height="13"
+          viewBox="0 0 13 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.89639 0.507229C2.59515 0.664415 -0.00998593 3.41371 2.87769e-05 6.71868C0.00307803 7.72529 0.246092 8.6754 0.674781 9.5149L0.0165904 12.7098C-0.0190141 12.8827 0.136857 13.034 0.308541 12.9933L3.4392 12.2516C4.24351 12.6523 5.14693 12.8837 6.10305 12.8983C9.47723 12.9498 12.2907 10.2706 12.3959 6.89769C12.5086 3.28214 9.52458 0.334438 5.89639 0.507229ZM9.63193 10.132C8.71509 11.0488 7.49608 11.5537 6.19949 11.5537C5.44029 11.5537 4.71343 11.3834 4.03903 11.0475L3.60305 10.8303L1.68364 11.285L2.08766 9.32373L1.87287 8.90311C1.52277 8.21748 1.34526 7.47606 1.34526 6.69949C1.34526 5.40287 1.85018 4.18388 2.76702 3.26701C3.67566 2.35836 4.91456 1.84522 6.19958 1.84522C7.49617 1.84525 8.71513 2.35017 9.63196 3.26698C10.5488 4.18382 11.0537 5.40281 11.0538 6.6994C11.0537 7.98445 10.5406 9.22334 9.63193 10.132Z"
+          ></path>
+          <path
+            d="M9.20802 8.04417L8.00718 7.69937C7.84931 7.65405 7.6793 7.69883 7.56426 7.81604L7.27061 8.11523C7.14678 8.24138 6.9589 8.28192 6.79501 8.21562C6.22696 7.98573 5.03201 6.92327 4.72684 6.39183C4.6388 6.23853 4.65336 6.04688 4.76146 5.907L5.01784 5.57532C5.11828 5.44537 5.13948 5.27085 5.07305 5.12063L4.56783 3.97796C4.44682 3.70428 4.09708 3.62461 3.8686 3.81785C3.53345 4.10131 3.13579 4.53206 3.08745 5.00927C3.00222 5.85062 3.36305 6.91122 4.72753 8.18474C6.30388 9.656 7.56621 9.85037 8.3881 9.65128C8.85428 9.53836 9.22682 9.0857 9.46195 8.71507C9.62224 8.46237 9.49567 8.12677 9.20802 8.04417Z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+    <!-- Пробное занятае модалка -->
+    <div class="trial-modal" data-modal="trial-modal">
+      <div class="trial-modal__header">
+        <h1 class="trial-modal__title">ПРОБНОЕ ЗАНЯТИЕ</h1>
+        <i class="fa-solid fa-xmark" data-close-modal></i>
+      </div>
+      <p class="trial-modal__subtitle">
+        Оставьте заявку, наш менеджер свяжется с вами в ближайшее время
+      </p>
+      <form class="trial-form" data-form>
+        <div class="form-group">
+          <input
+            type="text"
+            name="name"
+            class="trial-form__input"
+            placeholder="Ваше имя"
+          />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            name="age"
+            class="trial-form__input"
+            placeholder="Возраст"
+          />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="tel"
+            name="phone"
+            class="trial-form__input"
+            placeholder="+7 (___) ___-__-__"
+          />
+          <small class="error-text"></small>
+        </div>
+
+        <button type="submit" class="trial-form__btn btn" disabled>
+          Записаться на пробный урок
+        </button>
+      </form>
+    </div>
   </body>
+
+  <!-- Подключаем Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- JS -->
+  <script src="./js/companies.js" defer></script>
+  <script src="./js/reviews.js" defer></script>
+  <script src="./js/faq.js" defer></script>
+  <script src="./js/menu.js" defer></script>
+  <script src="./js/mobile-menu.js" defer></script>
+  <script src="./js/teachers.js" defer></script>
+  <script src="./js/trial-modal.js" defer></script>
+  <script src="./js/trial-form.js" defer></script>
+  <script src="./js/theme.js" defer></script>
 </html>

@@ -1,0 +1,230 @@
+.english__promo {
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
+    url(../imgs/england_promo.png);
+}
+#programs {
+  margin-top: 120px;
+}
+.programs__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.programs__card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 10px;
+  height: 100%;
+}
+.programs__card-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  padding: 10px 0;
+}
+.programs__card-title span {
+  font-weight: 400;
+  font-size: 16px;
+}
+.programs__card-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  padding-bottom: 10px;
+  flex: 1;
+}
+.programs__card-btn {
+  width: 100%;
+  border-radius: 48px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+.programs__card-btn:hover {
+  scale: 1.05;
+}
+
+/* benefits */
+#benefits {
+  margin-top: 120px;
+}
+.benefits__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.benefits__card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #074e62;
+  border-radius: 20px;
+}
+.benefits__icon {
+  width: 64px;
+}
+.benefits__content {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  flex: 1;
+}
+.benefits__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+.benefits__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  margin-top: 10px;
+}
+
+/* methods */
+#methods {
+  margin-top: 120px;
+}
+.methods__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.methods__card {
+  height: 280px;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+.methods__card:nth-child(1) {
+  background-image: url(../imgs/Rectangle\ 19.png);
+  background-size: cover;
+  background-position: center;
+}
+.methods__card:nth-child(3) {
+  background-image: url(../imgs/Rectangle\ 19.png);
+  background-size: cover;
+  background-position: center;
+}
+.methods__card:nth-child(5) {
+  background-image: url(../imgs/Rectangle\ 19.png);
+  background-size: cover;
+  background-position: center;
+}
+.methods__card:nth-child(2n) {
+  background: #074e62;
+}
+.methods__content {
+  transition: all 0.5s ease;
+}
+.methods__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #ffffff;
+  display: inline-block;
+  background: #074e62;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+.methods__description {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  padding: 0 10px;
+  color: #ffffff;
+}
+.methods__card:hover .methods__content {
+  background: #074e62;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.methods__card:hover .methods__description {
+  max-height: 200px;
+  opacity: 1;
+}
+.methods__card img {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.methods__card:nth-child(2n) .methods__title {
+  background: #fff;
+  color: #000;
+}
+.methods__card:nth-child(2n):hover .methods__content {
+  background: #fff;
+}
+.methods__card:nth-child(2n) .methods__description {
+  color: #000;
+}
+/* teachers */
+#teachers {
+  margin-top: 120px;
+}
+.teachers__swiper {
+  width: 100%;
+  height: auto;
+}
+.teachers__swiper .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+.teachers__swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.teacher__card {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+.teacher__photo {
+  width: 100%;
+  height: 380px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.teacher__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+.teacher__position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #313131;
+  flex: 1;
+}
+.teacher__btn {
+  width: 100%;
+  border-radius: 48px;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.teacher__btn:hover {
+  scale: 1.05;
+}

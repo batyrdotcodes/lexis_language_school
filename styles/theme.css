@@ -1,0 +1,307 @@
+/* theme switch */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.theme-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 30px;
+  transition: background-color 0.4s;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+.theme-slider::before {
+  content: '';
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+.theme-switch input:checked + .theme-slider {
+  background-color: #4a4a4a;
+}
+.theme-switch input:checked + .theme-slider::before {
+  transform: translateX(30px);
+}
+/* плавность */
+body,
+.header,
+.header__icon,
+.header__menu-btn,
+.header__menu-btn i,
+.btn,
+.section__titles,
+.section__titles span,
+.corporate__promo-benefits-list,
+.corporate__promo-benefits-title,
+.corporate__promo-benefits,
+.corporate__promo-feature,
+.corporate__promo-title span,
+.corporate__promo-title,
+#corporate__promo {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    fill 0.3s ease,
+    border-color 0.3s ease;
+}
+/* common */
+body.dark-theme .btn {
+  background: #1894b7;
+  transition: all 0.5s ease;
+}
+body.dark-theme .section__titles {
+  color: #ffffff;
+}
+body.dark-theme .section__titles span {
+  color: #1894b7;
+}
+body.dark-theme .whatsapp-widjet {
+  background: #1894b7;
+  border: 1px solid #1894b7;
+}
+body.dark-theme .whatsapp-widjet-circle-left {
+  border: 1px solid #1894b7;
+  border-right: none;
+}
+body.dark-theme .swiper__btn i {
+  background: transparent;
+  color: #1894b7;
+  display: inline-block;
+  font-size: 45px;
+  height: 40px;
+}
+body.dark-theme .trial__promo {
+  border: 10px solid #1894b7;
+}
+body.dark-theme .trial__content {
+  background: #001a21;
+}
+body.dark-theme .trial__title {
+  color: #ffffff;
+}
+body.dark-theme .trial__title span {
+  color: #1894b7;
+}
+body.dark-theme .trial__subtitle {
+  color: #ffffff;
+}
+body.dark-theme .trial-form__input {
+  background-color: #002a36;
+  color: #ffffff;
+}
+/* header */
+body.dark-theme {
+  background: #002a36;
+}
+body.dark-theme .header {
+  background: #001a21;
+  color: #ffffff;
+}
+body.dark-theme .header__icon {
+  background: #001a21;
+}
+body.dark-theme .header__menu-btn {
+  background: #ffffff !important;
+  color: #001a21;
+}
+body.dark-theme .header__menu-btn i {
+  color: #001a21;
+}
+/* about */
+body.dark-theme .about__content-title {
+  color: #ffffff;
+}
+body.dark-theme .about__content-title span {
+  color: #1894b7;
+}
+body.dark-theme .about__content-items {
+  color: #ffffff;
+}
+body.dark-theme .about__content-context {
+  color: #ffffff;
+}
+body.dark-theme .about__content-items i {
+  color: #002a36;
+  background: #1894b7;
+}
+/* company */
+body.dark-theme .company {
+  background: #001a21;
+}
+/* review */
+body.dark-theme .review__item {
+  background: #001a21;
+}
+body.dark-theme .review__author-info p {
+  color: #ffffff;
+}
+body.dark-theme .review__content {
+  background: #1894b7;
+}
+body.dark-theme .review__content p {
+  background: #001a21;
+  color: #ffffff;
+}
+/* faq */
+body.dark-theme .faq__item-question {
+  background: #001a21;
+  color: #ffffff;
+}
+body.dark-theme .faq__toggle {
+  background: #1894b7;
+}
+body.dark-theme .faq__item-answer {
+  background: #1894b7;
+}
+/* footer */
+body.dark-theme .footer__container {
+  background: #1894b7;
+}
+body.dark-theme .footer__icon {
+  background: #1894b7;
+}
+body.dark-theme .footer_nav a {
+  color: #ffffff;
+}
+body.dark-theme .footer__bottom {
+  background: #001a21;
+}
+/* programs */
+body.dark-theme .programs__cards {
+  color: #ffffff;
+}
+/* methods */
+body.dark-theme .methods__title {
+  background: #1894b7;
+}
+body.dark-theme .methods__card:nth-child(2n) {
+  background: #1894b7;
+}
+body.dark-theme .methods__card:hover .methods__content {
+  background: #1894b7;
+}
+body.dark-theme .methods__card:nth-child(2n) .methods__title {
+  background: #fff;
+  color: #000;
+}
+body.dark-theme .methods__card:nth-child(2n):hover .methods__content {
+  background: #fff;
+}
+/* benefits */
+body.dark-theme .benefits__card {
+  background: #1894b7;
+}
+body.dark-theme .benefits__content {
+  background: #001a21;
+  color: #ffffff;
+}
+body.dark-theme .benefits__content {
+  background: #001a21;
+  color: #ffffff;
+}
+/* teachers */
+body.dark-theme .teacher__card {
+  color: #ffffff;
+}
+body.dark-theme .teacher__position {
+  color: #ffffff;
+}
+/* corporate */
+body.dark-theme #corporate__promo {
+  background: #001a21;
+}
+body.dark-theme .corporate__promo-title {
+  color: #ffffff;
+}
+body.dark-theme .corporate__promo-title span {
+  color: #1894b7;
+}
+body.dark-theme .corporate__promo-feature {
+  border: 1px solid #1894b7;
+  color: #ffffff;
+}
+body.dark-theme .corporate__promo-benefits {
+  background: #002a36;
+}
+body.dark-theme .corporate__promo-benefits-title {
+  color: #1894b7;
+}
+body.dark-theme .corporate__promo-benefits-list {
+  color: #ffffff;
+}
+/* segments */
+body.dark-theme .segments__item {
+  background: #001a21;
+}
+body.dark-theme .segments__item-code {
+  color: #1894b733;
+}
+body.dark-theme .segments__item-code {
+  color: #1894b733;
+}
+body.dark-theme .segments__item-content {
+  background: #1894b7;
+  color: #ffffff;
+}
+/* audience */
+body.dark-theme .audience__item--1 .audience__num-circle {
+  background: #1894b7;
+  color: #001a21;
+}
+body.dark-theme .audience__item--2 {
+  background: #001a21;
+  color: #fff;
+}
+body.dark-theme .audience__item--2 .audience__num-circle {
+  background: #1894b7;
+  color: #001a21;
+}
+body.dark-theme .audience__item--3 {
+  background: #1894b7;
+  color: #ffffff;
+}
+body.dark-theme .audience__item--3 .audience__num-circle {
+  background: #001a21;
+  color: #1894b7;
+}
+body.dark-theme .audience__item--4 .audience__num-circle {
+  background: #1894b7;
+  color: #001a21;
+}
+body.dark-theme .audience__item--5 .audience__num-circle {
+  background: #001a21;
+  color: #1894b7;
+}
+/*  */
+body.dark-theme .choose__content-info {
+  background: #001a21;
+  color: #ffffff;
+}
+body.dark-theme .choose__content-info span {
+  color: #1894b7;
+}
+/* rewards */
+body.dark-theme .rewards__item {
+  background: #074e62;
+  color: #ffffff;
+}

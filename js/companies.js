@@ -1,21 +1,16 @@
-const swiperBrands = new Swiper('.companies_wrap', {
-  loop: true,
+const companiesSwiper = new Swiper('.companies_swiper', {
   slidesPerView: 3,
-  slidesPerGroup: 1,
-  spaceBetween: 16,
+  spaceBetween: 20,
+  loop: true,
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
   },
   speed: 4000,
-  freeMode: true,
-  freeModeMomentum: false,
-
+  allowTouchMove: false,
   breakpoints: {
-    769: {
+    768: {
       slidesPerView: 8,
-      spaceBetween: 10,
-      slidesPerGroup: 1,
     },
   },
 });
