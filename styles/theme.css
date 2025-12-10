@@ -302,3 +302,36 @@ body.dark-theme .rewards__item {
   background: #074e62;
   color: #ffffff;
 }
+/* menu */
+body.dark-theme .side-menu {
+  background: #001a21;
+}
+body.dark-theme .side-menu i {
+  color: #ffffff;
+}
+body.dark-theme .side-menu li {
+  border-bottom: 1px solid #1894b7;
+}
+body.dark-theme .side-menu li:last-child {
+  border-bottom: none;
+}
+body.dark-theme .side-menu li a {
+  color: #ffffff;
+}
+/* mob menu */
+body.dark-theme .mobile-menu {
+  background: #001a21;
+}
+body.dark-theme .mobile-menu li {
+  border-bottom: 1px solid #1894b7;
+}
+body.dark-theme .mobile-menu li:last-child {
+  border-bottom: none;
+}
+body.dark-theme .mobile-menu li a {
+  color: #ffffff;
+}
+/* overlay experiment*/
+body.dark-theme .overlay {
+  background: #1895b7bd;
+}
