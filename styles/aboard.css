@@ -156,13 +156,11 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
-  letter-spacing: 0%;
 }
 .choose__content-info p span {
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
-  letter-spacing: 0%;
   color: #07708e;
 }
 /* rewards */
@@ -194,7 +192,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  letter-spacing: 0%;
+
   text-align: center;
   margin-top: 10px;
 }

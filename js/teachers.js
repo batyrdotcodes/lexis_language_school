@@ -7,7 +7,7 @@ const teachersSwiper = new Swiper('.teachers__swiper', {
     prevEl: '.teachers__btn--prev',
   },
   breakpoints: {
-    0: {
+    768: {
       slidesPerView: 4,
     },
   },

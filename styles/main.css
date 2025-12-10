@@ -55,7 +55,7 @@ body {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0%;
+
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -70,7 +70,8 @@ body {
 
 /* Promo */
 .promo {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
     url(../imgs/promo.png);
   background-size: cover;
   background-position: center;
@@ -108,7 +109,7 @@ body {
   font-style: SemiBold;
   font-size: 24px;
   line-height: 100%;
-  letter-spacing: 0%;
+
   color: #ffffff;
   margin: 0;
 }
@@ -143,7 +144,8 @@ body {
   margin-top: 10px;
 }
 .languages__england {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 130%),
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 130%),
     url(../imgs/england_promo.png);
   background-size: cover;
   background-position: center;
@@ -152,7 +154,8 @@ body {
   border-radius: 20px;
 }
 .languages__china {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 130%),
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 130%),
     url(../imgs/china_promo.png);
   background-size: cover;
   background-position: center;
@@ -161,7 +164,8 @@ body {
   border-radius: 20px;
 }
 .languages__korea {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 130%),
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 130%),
     url(../imgs/korea_promo.png);
   background-size: cover;
   background-position: center;
@@ -170,7 +174,8 @@ body {
   border-radius: 20px;
 }
 .languages__germany {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 130%),
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 130%),
     url(../imgs/germany_promo.png);
   background-size: cover;
   background-position: center;
@@ -245,7 +250,6 @@ body {
   font-style: Regular;
   font-size: 24px;
   line-height: 120%;
-  letter-spacing: 0%;
 }
 .about__content-items {
   display: flex;
@@ -258,7 +262,7 @@ body {
   font-style: Medium;
   font-size: 24px;
   line-height: 120%;
-  letter-spacing: 0%;
+
   margin: 0;
 }
 .about__content-items i {

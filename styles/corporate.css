@@ -48,7 +48,6 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 120%;
-  letter-spacing: 0%;
 }
 .corporate__promo-benefits {
   display: flex;
@@ -63,7 +62,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
-  letter-spacing: 0%;
+
   color: #11586c;
 }
 .corporate__promo-benefits-list {
@@ -81,7 +80,7 @@
   letter-spacing: -4%;
 }
 .corporate__promo-btn:hover {
-    scale: 1.05;
+  scale: 1.05;
 }
 /* segmenst */
 #segments {
@@ -89,48 +88,48 @@
   width: 100%;
   margin-top: 120px;
 }
-.segments__list{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.segments__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 .segments__item {
-    background: #074e62;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  background: #074e62;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.segments__item-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    padding: 10px 0;
+.segments__item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 10px 0;
 }
-.segments__item-type{
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: -2%;
-    color: #ffffff;
-    width: 70%;
-    text-align: left;
+.segments__item-type {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #ffffff;
+  width: 70%;
+  text-align: left;
 }
-.segments__item-code{
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 85%;
-    letter-spacing: -4%;
-    color: #FFFFFF33;
+.segments__item-code {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85%;
+  letter-spacing: -4%;
+  color: #ffffff33;
 }
-.segments__item-content{
-    width: 100%;
-    margin-top: 20px;
-    padding: 20px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    flex: 1;
-    text-align: left;
+.segments__item-content {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  flex: 1;
+  text-align: left;
 }

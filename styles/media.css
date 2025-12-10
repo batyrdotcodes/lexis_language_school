@@ -23,6 +23,44 @@
   .section__titles {
     font-size: 35px;
   }
+  .swiper__btn {
+    cursor: default;
+    margin-bottom: 5px;
+  }
+  /* delete scale */
+  .header__menu-btn:hover {
+    scale: none;
+  }
+  .swiper__btn i:hover {
+    scale: none;
+  }
+  .promo__context-btn:hover {
+    scale: none;
+  }
+  .promo__flags img:hover {
+    scale: none;
+  }
+  .faq__btn:hover {
+    scale: none;
+  }
+  .faq__toggle:hover {
+    scale: none;
+  }
+  .trial-form__btn:hover {
+    scale: none;
+  }
+  .corporate__promo-btn:hover {
+    scale: none;
+  }
+  .languages__card-btn:hover {
+    scale: none;
+  }
+  .programs__card-btn:hover {
+    scale: none;
+  }
+  .teacher__btn:hover {
+    scale: none;
+  }
   /* header */
   .header {
     width: 90%;
@@ -35,9 +73,6 @@
     width: 93px;
     height: 32px;
     cursor: default;
-  }
-  .header__menu-btn:hover {
-    scale: none;
   }
   .theme-switch {
     display: none;
@@ -174,6 +209,14 @@
     width: 90%;
     margin-top: 50px;
   }
+  .company {
+    width: 108px;
+    height: 108px;
+  }
+  .company img {
+    width: 80px;
+    height: auto;
+  }
   /* reviews */
   #reviews {
     width: 90%;
@@ -186,19 +229,148 @@
   }
   .faq__content {
     grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .faq__item-question {
+    padding: 10px;
+  }
+  .faq__item-question p {
+    font-size: 20px;
+  }
+  .faq__toggle {
+    font-size: 24px;
+    width: 38px;
+    height: 38px;
+  }
+  .faq__item-answer.active {
+    padding: 10px;
+    max-height: 300px;
+    opacity: 1;
+    transform: all 0.5 esse;
+  }
+  .faq__item-answer p {
+    font-size: 16px;
+    transform: all 0.5 esse;
+  }
+  .faq__btn {
+    display: none;
+  }
+  .faq__btn-mob {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
   }
   /* programs */
   #programs {
     width: 90%;
     margin-top: 50px;
   }
-  .programs__cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .programs__card img {
+    width: 100%;
   }
-  .programs__card {
-    width: 70%;
+  .programs__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  /* benefits */
+  #benefits {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .benefits__cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  /* methods */
+  #methods {
+    width: 90%;
+  }
+  .methods__swiper {
+    display: block;
+  }
+  .methods__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .methods__description {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    padding: 10px;
+  }
+  .methods__card {
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 280px;
+  }
+  .methods__card:hover .methods__description {
+    max-height: none;
+    opacity: 1;
+  }
+  .methods__content {
+    background: #074e62;
+    border-radius: 8px;
+  }
+  .methods__content:nth-child(2n) {
+    background: #ffffff;
+    border-radius: 8px;
+  }
+  /* trial */
+  #trial {
+    width: 90%;
+    margin-top: 50px;
+    display: block;
+  }
+  .trial__promo {
+    display: none;
+  }
+  .trial__content {
+    border-radius: 8px;
+  }
+  .trial__title {
+    font-size: 30px;
+    text-align: center;
+    height: 25px;
+  }
+  .trial__subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .trial-form {
+    margin-top: 10px;
+  }
+  .trial-form__input {
+    height: 40px;
+    border-radius: 4px;
+  }
+  /* teachers */
+  #teachers {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .teachers__nav {
+    display: none;
+  }
+  .teachers__nav-mob {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  /* reviews */
+  .reviews__nav {
+    display: none;
+  }
+  .reviews__nav-mob {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
   }
 }
