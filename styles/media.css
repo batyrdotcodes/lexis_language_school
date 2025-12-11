@@ -373,4 +373,56 @@
     justify-content: center;
     margin-top: 20px;
   }
+  /* corporate */
+  #corporate__promo {
+    width: 90%;
+    flex-direction: column;
+  }
+  .corporate__promo-icon {
+    width: 100%;
+    height: 300px;
+  }
+  .corporate__promo-container {
+    width: 100%;
+  }
+  .corporate__promo-title {
+    font-size: 35px;
+  }
+  .corporate__promo-features {
+    margin: 20px 0;
+  }
+  .corporate__promo-feature {
+    padding: 5px 10px;
+  }
+  .corporate__promo-benefits {
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .corporate__promo-btn {
+    width: 100%;
+    border-radius: 8px;
+  }
+  /* segments */
+  #segments {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .segments__item {
+    height: 100%;
+  }
+  .segments__list .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+  .segments__list .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .segments__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
 }
