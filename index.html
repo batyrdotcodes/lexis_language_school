@@ -77,197 +77,293 @@
       </div>
     </header>
 
-    <section id="promo" class="promo aboard__promo">
+    <section id="promo" class="home__promo">
       <div class="promo__context">
         <h1 class="promo__context-title">
-          Наша миссия — сделать качественное образование за рубежом доступным
-          для каждого студента Казахстана.
+          Учись, общайся, путешествуй без границ!
         </h1>
-        <button class="promo__context-btn btn">оставить заявку</button>
-      </div>
-    </section>
-    <section id="audience" class="audience">
-      <h1 class="section__titles">
-        Для кого подходят <span>наши услуги</span>
-      </h1>
-
-      <div class="audience__content">
-        <div class="audience__col">
-          <div class="audience__item audience__item--1 audience__item--big">
-            <div class="audience__num">
-              <div class="audience__num-circle">1</div>
-            </div>
-            <p class="audience__text">
-              Студенты, которые хотят учиться за рубежом, но не знают, с чего
-              начать
-            </p>
-          </div>
-          <div class="audience__item audience__item--3 audience__item--small">
-            <p class="audience__text">
-              Студенты, которые хотят учиться за рубежом, но не знают, с чего
-              начать
-            </p>
-            <div class="audience__num">
-              <div class="audience__num-circle">3</div>
-            </div>
-          </div>
-        </div>
-        <div class="audience__col">
-          <div class="audience__item audience__item--2 audience__item--small">
-            <p class="audience__text">
-              Студенты, которые хотят учиться за рубежом, но не знают, с чего
-              начать
-            </p>
-            <div class="audience__num">
-              <div class="audience__num-circle">2</div>
-            </div>
-          </div>
-          <div class="audience__item audience__item--4 audience__item--big">
-            <div class="audience__num">
-              <div class="audience__num-circle">4</div>
-            </div>
-            <p class="audience__text">
-              Студенты, которые хотят учиться за рубежом, но не знают, с чего
-              начать
-            </p>
-          </div>
-          <div class="audience__item audience__item--5 audience__item--big">
-            <div class="audience__num">
-              <div class="audience__num-circle">5</div>
-            </div>
-            <p class="audience__text">
-              Студенты, которые хотят учиться за рубежом, но не знают, с чего
-              начать
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="trial">
-      <div class="trial__promo"></div>
-      <div class="trial__content">
-        <h1 class="trial__title">Записать на <span>консультацию</span></h1>
-        <p class="trial__subtitle">
-          Оставьте заявку, наш менеджер свяжется с вами в ближайшее время
+        <p class="promo__context-subtitle">
+          4 языка — 1 школа, 1000 возможностей
         </p>
-        <form class="trial-form" data-form>
-          <div class="form-group">
-            <input
-              type="text"
-              name="name"
-              class="trial-form__input"
-              placeholder="Ваше имя"
-            />
-            <small class="error-text"></small>
-          </div>
-
-          <div class="form-group">
-            <input
-              type="text"
-              name="age"
-              class="trial-form__input"
-              placeholder="Возраст"
-            />
-            <small class="error-text"></small>
-          </div>
-
-          <div class="form-group">
-            <input
-              type="tel"
-              name="phone"
-              class="trial-form__input"
-              placeholder="+7 (___) ___-__-__"
-            />
-            <small class="error-text"></small>
-          </div>
-
-          <button type="submit" class="trial-form__btn btn" disabled>
-            Записаться на пробный урок
-          </button>
-        </form>
+        <button class="promo__context-btn btn" data-open-modal="trial-modal">
+          Записаться на пробный урок
+        </button>
+      </div>
+      <div class="promo__flags">
+        <img src="./imgs/england_icon.png" alt="флаг Великобретании" />
+        <img src="./imgs/korea_icon.png" alt="флаг Кореии" />
+        <img src="./imgs/china_icon.png" alt="флаг Китая" />
+        <img src="./imgs/germany_icon.png" alt="флаг Германии" />
       </div>
     </section>
-    <section id="choose">
+    <section id="languages">
+      <div class="languages__item languages__england">
+        <div class="languages__content">
+          <h1 class="languages__card-title">Английский язык</h1>
+          <button class="languages__card-btn btn">Подробнее</button>
+        </div>
+      </div>
+      <div class="languages__item languages__china">
+        <div class="languages__content">
+          <h1 class="languages__card-title">Китайский язык</h1>
+          <button class="languages__card-btn btn">Подробнее</button>
+        </div>
+      </div>
+      <div class="languages__item languages__korea">
+        <div class="languages__content">
+          <h1 class="languages__card-title">Корейский язык</h1>
+          <button class="languages__card-btn btn">Подробнее</button>
+        </div>
+      </div>
+      <div class="languages__item languages__germany">
+        <div class="languages__content">
+          <h1 class="languages__card-title">Немецкий язык</h1>
+          <button class="languages__card-btn btn">Подробнее</button>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <img src="./imgs/about_promo.png" alt="" />
+      <div class="about__content">
+        <h1 class="about__content-title"><span>Об</span> Lexis Academy</h1>
+        <p class="about__content-context">
+          Мы — международная школа языков, где обучение становится вдохновением.
+          <br />
+          <br />
+          Наши преподаватели — сертифицированные специалисты с международным
+          опытом. Мы верим, что язык — это инструмент, который открывает новые
+          страны, людей и возможности.
+        </p>
+        <div class="about__content-items">
+          <i class="fa-solid fa-check"></i>
+          <p>Более 3000 студентов уже заговорили на иностранном!</p>
+        </div>
+        <div class="about__content-items">
+          <i class="fa-solid fa-check"></i>
+          <p>Онлайн и офлайн-формат</p>
+        </div>
+        <div class="about__content-items">
+          <i class="fa-solid fa-check"></i>
+          <p>Индивидуальные и групповые занятия</p>
+        </div>
+      </div>
+    </section>
+    <section id="companies">
       <h1 class="section__titles">
-        Для кого подходят <span>наши услуги</span>
+        <span>С нами изучают английский</span><br />
+        топовые компании в разных нишах
       </h1>
-      <div class="choose__content">
-        <div class="choose__decor choose__decor--left"></div>
-        <div class="choose__content-info">
-          <p>
-            <span>Lexis Academy</span> — это не просто агентство, а полноценная
-            языковая школа.
-            <br />
-            У нас студенты учат английский, готовятся к IELTS и продолжают
-            процесс поступления с нашей командой.
-            <br />
-            <br />
-            Наши услуги <span>дешевле</span>, чем у других агентств.
-            <br />
-            Мы не берём комиссию от университетов и предлагаем
-            <span>честные цены</span> без скрытых платежей.
-            <br />
-            <br />
-            Индивидуальный подход и связь <span>24/7</span>. Каждый студент
-            получает <span>личного куратора</span>.
-          </p>
+      <div class="companies_swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide company-slide">
+            <div class="company">
+              <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+            </div>
+          </div>
+          <div class="swiper-slide company-slide">
+            <div class="company">
+              <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+            </div>
+          </div>
+          <div class="swiper-slide company-slide">
+            <div class="company">
+              <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+            </div>
+          </div>
+          <div class="swiper-slide company-slide">
+            <div class="company">
+              <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+            </div>
+          </div>
+          <div class="swiper-slide company-slide">
+            <div class="company">
+              <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+            </div>
+          </div>
+          <div class="swiper-slide company-slide">
+            <div class="company">
+              <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+            </div>
+          </div>
+          <div class="swiper-slide company-slide">
+            <div class="company">
+              <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+            </div>
+          </div>
+          <div class="swiper-slide company-slide">
+            <div class="company">
+              <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+            </div>
+          </div>
+          <div class="swiper-slide company-slide">
+            <div class="company">
+              <img src="./imgs/company__icon-1.png" alt="Наши клиенты" />
+            </div>
+          </div>
         </div>
-        <div class="choose__decor choose__decor--right"></div>
       </div>
     </section>
-    <section id="rewards">
-      <h1 class="section__titles">Что вы <span>получите</span></h1>
-      <div class="rewards__container swiper">
+    <section id="reviews" class="reviews">
+      <div class="section__header">
+        <h1 class="section__titles">
+          <span>Отзывы</span>
+        </h1>
+        <div class="swiper__nav">
+          <button class="swiper__btn reviews__btn--prev">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </button>
+          <button class="swiper__btn reviews__btn--next">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="reviews__swiper swiper">
         <div class="swiper-wrapper">
-          <div class="rewards__item swiper-slide">
-            <div class="rewards__item-icon">
-              <img src="./imgs/Star 1.png" alt="" />
+          <div class="swiper-slide review__item">
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./imgs/china_icon.png"
+                alt="Фото отзыва"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Данияр 2</p>
+                <p class="review__author-level">уровень A2 → B1</p>
+              </div>
             </div>
-            <div class="rewards__item-text">
-              Международное образование и диплом, признанный по всему миру
-            </div>
-          </div>
-          <div class="rewards__item swiper-slide">
-            <div class="rewards__item-icon">
-              <img src="./imgs/Star 1.png" alt="" />
-            </div>
-            <div class="rewards__item-text">
-              Международное образование и диплом, признанный по всему миру
-            </div>
-          </div>
-          <div class="rewards__item swiper-slide">
-            <div class="rewards__item-icon">
-              <img src="./imgs/Star 1.png" alt="" />
-            </div>
-            <div class="rewards__item-text">
-              Международное образование и диплом, признанный по всему миру
+            <div class="review__content">
+              <p>
+                Учил для работы, но в итоге начал смотреть сериалы без
+                субтитров. Методика — огонь!
+              </p>
             </div>
           </div>
-          <div class="rewards__item swiper-slide">
-            <div class="rewards__item-icon">
-              <img src="./imgs/Star 1.png" alt="" />
+          <div class="swiper-slide review__item">
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./imgs/china_icon.png"
+                alt="Фото отзыва"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Данияр</p>
+                <p class="review__author-level">уровень A2 → B1</p>
+              </div>
             </div>
-            <div class="rewards__item-text">
-              Международное образование и диплом, признанный по всему миру
+            <div class="review__content">
+              <p>
+                Учил для работы, но в итоге начал смотреть сериалы без
+                субтитров. Методика — огонь!
+              </p>
             </div>
           </div>
-          <div class="rewards__item swiper-slide">
-            <div class="rewards__item-icon">
-              <img src="./imgs/Star 1.png" alt="" />
+          <div class="swiper-slide review__item">
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./imgs/china_icon.png"
+                alt="Фото отзыва"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Данияр</p>
+                <p class="review__author-level">уровень A2 → B1</p>
+              </div>
             </div>
-            <div class="rewards__item-text">
-              Международное образование и диплом, признанный по всему миру
+            <div class="review__content">
+              <p>
+                Учил для работы, но в итоге начал смотреть сериалы без
+                субтитров. Методика — огонь!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide review__item">
+            <div class="review__author">
+              <img
+                class="review__author-photo"
+                src="./imgs/china_icon.png"
+                alt="Фото отзыва"
+              />
+              <div class="review__author-info">
+                <p class="review__author-name">Данияр</p>
+                <p class="review__author-level">уровень A2 → B1</p>
+              </div>
+            </div>
+            <div class="review__content">
+              <p>
+                Учил для работы, но в итоге начал смотреть сериалы без
+                субтитров. Методика — огонь!
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="swiper__nav rewards__nav">
-        <button class="swiper__btn rewards__btn--prev">
-          <i class="fa-solid fa-circle-chevron-left"></i>
-        </button>
-        <button class="swiper__btn rewards__btn--next">
-          <i class="fa-solid fa-circle-chevron-right"></i>
-        </button>
+    </section>
+    <section id="faq">
+      <div class="section__header">
+        <h1 class="section__titles">Часто задаваемые <span>вопросы</span></h1>
+        <button class="faq__btn btn">Задать вопрос</button>
+      </div>
+      <div class="faq__content">
+        <div class="faq__item">
+          <div class="faq__item-question">
+            <p>Сколько человек в группе?</p>
+            <button class="faq__toggle">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq__item-answer">
+            <p>
+              В группе от 4 до 8 человек. Мы считаем, что это оптимальное
+              количество для эффективного обучения и взаимодействия между
+              студентами.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__item-question">
+            <p>Сколько человек в группе?</p>
+            <button class="faq__toggle">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq__item-answer">
+            <p>
+              В группе от 4 до 8 человек. Мы считаем, что это оптимальное
+              количество для эффективного обучения и взаимодействия между
+              студентами.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__item-question">
+            <p>Сколько человек в группе?</p>
+            <button class="faq__toggle">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq__item-answer">
+            <p>
+              В группе от 4 до 8 человек. Мы считаем, что это оптимальное
+              количество для эффективного обучения и взаимодействия между
+              студентами.
+            </p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__item-question">
+            <p>Сколько человек в группе?</p>
+            <button class="faq__toggle">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="faq__item-answer">
+            <p>
+              В группе от 4 до 8 человек. Мы считаем, что это оптимальное
+              количество для эффективного обучения и взаимодействия между
+              студентами.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 

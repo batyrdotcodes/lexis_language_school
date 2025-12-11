@@ -198,11 +198,11 @@ body.dark-theme .methods__card:hover .methods__content {
   background: #1894b7;
 }
 body.dark-theme .methods__card:nth-child(2n) .methods__title {
-  background: #fff;
+  background: #ffffff;
   color: #000;
 }
 body.dark-theme .methods__card:nth-child(2n):hover .methods__content {
-  background: #fff;
+  background: #ffffff;
 }
 /* benefits */
 body.dark-theme .benefits__card {
@@ -289,7 +289,7 @@ body.dark-theme .audience__item--5 .audience__num-circle {
   background: #001a21;
   color: #1894b7;
 }
-/*  */
+/* choose */
 body.dark-theme .choose__content-info {
   background: #001a21;
   color: #ffffff;
@@ -333,5 +333,18 @@ body.dark-theme .mobile-menu li a {
 }
 /* overlay experiment*/
 body.dark-theme .overlay {
-  background: #1895b7bd;
+  background: #002a36d0;
+}
+/* trial-modal */
+body.dark-theme .trial-modal {
+  background: #001a21;
+}
+body.dark-theme .trial-modal__title {
+  color: #1894b7;
+}
+body.dark-theme .trial-modal__header i {
+  color: #ffffff;
+}
+body.dark-theme .trial-modal__subtitle {
+  color: #ffffff;
 }
