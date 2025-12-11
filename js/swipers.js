@@ -99,3 +99,24 @@ const companiesSwiper = new Swiper('.companies_swiper', {
     },
   },
 });
+
+// rewards
+const rewardsSwiper = new Swiper('.rewards__container', {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+    nextEl: '.rewards__btn--next',
+    prevEl: '.rewards__btn--prev',
+  },
+  breakpoints: {
+    769: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+    },
+  },
+});

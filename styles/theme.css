@@ -42,7 +42,7 @@
 .theme-switch input:checked + .theme-slider::before {
   transform: translateX(30px);
 }
-/* плавность */
+/* black theme */
 body,
 .header,
 .header__icon,
