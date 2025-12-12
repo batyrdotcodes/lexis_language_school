@@ -553,4 +553,15 @@
   .programs-modal {
     width: 90%;
   }
+  /* corp modal */
+  .corp-modal {
+    width: 90%;
+    padding: 30px;
+  }
+  .corp-modal__header-name {
+    font-size: 28px;
+  }
+  .corp-modal__title {
+    font-size: 16px;
+  }
 }
