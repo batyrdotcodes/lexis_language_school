@@ -37,7 +37,9 @@
           Для краткого описание направления, если оно нужно, если нет, уберем
           Для краткого описание направления, если оно нужно, если нет, уберем
         </p>
-        <button class="programs__card-btn btn">Подробнее</button>
+        <button class="programs__card-btn btn" data-open-modal="programs-modal">
+          Подробнее
+        </button>
       </div>
       <div class="programs__card swiper-slide">
         <img src="./imgs/Rectangle 3.png" alt="Курс IELTS" />
@@ -45,7 +47,9 @@
         <p class="programs__card-subtitle">
           Для краткого описание направления, если оно нужно, если нет, уберем
         </p>
-        <button class="programs__card-btn btn">Подробнее</button>
+        <button class="programs__card-btn btn" data-open-modal="programs-modal">
+          Подробнее
+        </button>
       </div>
       <div class="programs__card swiper-slide">
         <img src="./imgs/Rectangle 3.png" alt="Курс IELTS" />
@@ -55,7 +59,9 @@
         <p class="programs__card-subtitle">
           Для краткого описание направления, если оно нужно, если нет, уберем
         </p>
-        <button class="programs__card-btn btn">Подробнее</button>
+        <button class="programs__card-btn btn" data-open-modal="programs-modal">
+          Подробнее
+        </button>
       </div>
       <div class="programs__card swiper-slide">
         <img src="./imgs/Rectangle 3.png" alt="Курс IELTS" />
@@ -63,7 +69,9 @@
         <p class="programs__card-subtitle">
           Для краткого описание направления, если оно нужно, если нет, уберем
         </p>
-        <button class="programs__card-btn btn">Подробнее</button>
+        <button class="programs__card-btn btn" data-open-modal="programs-modal">
+          Подробнее
+        </button>
       </div>
     </div>
   </div>
@@ -271,7 +279,11 @@
         />
         <p class="teacher__name">Анна Иванова</p>
         <p class="teacher__position">Преподаватель английского языка</p>
-        <button class="teacher__btn btn">Сертификаты</button>
+        <div class="teacher__btn-block">
+          <button class="teacher__btn btn" data-open-modal="cert-modal">
+            Сертификаты
+          </button>
+        </div>
       </div>
       <div class="swiper-slide teacher__card">
         <img
@@ -281,7 +293,11 @@
         />
         <p class="teacher__name">Анна Иванова</p>
         <p class="teacher__position">Преподаватель английского языка</p>
-        <button class="teacher__btn btn">Сертификаты</button>
+        <div class="teacher__btn-block">
+          <button class="teacher__btn btn" data-open-modal="cert-modal">
+            Сертификаты
+          </button>
+        </div>
       </div>
       <div class="swiper-slide teacher__card">
         <img
@@ -291,7 +307,11 @@
         />
         <p class="teacher__name">Анна Иванова</p>
         <p class="teacher__position">Преподаватель английского языка</p>
-        <button class="teacher__btn btn">Сертификаты</button>
+        <div class="teacher__btn-block">
+          <button class="teacher__btn btn" data-open-modal="cert-modal">
+            Сертификаты
+          </button>
+        </div>
       </div>
       <div class="swiper-slide teacher__card">
         <img
@@ -304,7 +324,11 @@
           Краткий текст о преподавателишколы английского языкаКраткий текст о
           преподавател
         </p>
-        <button class="teacher__btn btn">Сертификаты</button>
+        <div class="teacher__btn-block">
+          <button class="teacher__btn btn" data-open-modal="cert-modal">
+            Сертификаты
+          </button>
+        </div>
       </div>
       <div class="swiper-slide teacher__card">
         <img
@@ -317,7 +341,11 @@
           Краткий текст о преподавателишколы английского языкаКраткий текст о
           преподавател
         </p>
-        <button class="teacher__btn btn">Сертификаты</button>
+        <div class="teacher__btn-block">
+          <button class="teacher__btn btn" data-open-modal="cert-modal">
+            Сертификаты
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -422,6 +450,69 @@
             Учил для работы, но в итоге начал смотреть сериалы без субтитров.
             Методика — огонь!
           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper__nav reviews__nav-mob">
+    <button class="swiper__btn reviews__btn--prev">
+      <i class="fa-solid fa-circle-chevron-left"></i>
+    </button>
+    <button class="swiper__btn reviews__btn--next">
+      <i class="fa-solid fa-circle-chevron-right"></i>
+    </button>
+  </div>
+</section>
+<section id="reviews-v" class="reviews">
+  <div class="section__header">
+    <h1 class="section__titles">
+      <span>Видео отзывы</span>
+    </h1>
+    <div class="swiper__nav reviews__nav">
+      <button class="swiper__btn reviews-v__btn--prev">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+      </button>
+      <button class="swiper__btn reviews-v__btn--next">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+  <div class="reviews-v__swiper swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide review-v__item">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/rltBpXuEfyc?si=OsuxghrGZtcNNVJx"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <div class="swiper-slide review-v__item">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/rltBpXuEfyc?si=OsuxghrGZtcNNVJx"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <div class="swiper-slide review-v__item">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/rltBpXuEfyc?si=OsuxghrGZtcNNVJx"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <div class="swiper-slide review-v__item">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/rltBpXuEfyc?si=OsuxghrGZtcNNVJx"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </div>
