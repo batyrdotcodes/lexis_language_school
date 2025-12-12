@@ -544,4 +544,8 @@
   .cert-modal__header-name {
     font-size: 30px;
   }
+  /* programs-modal */
+  .programs-modal {
+    width: 90%;
+  }
 }

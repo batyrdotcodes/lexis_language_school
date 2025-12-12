@@ -348,6 +348,9 @@ body.dark-theme .trial-modal__title {
 body.dark-theme .trial-modal__header i {
   color: #ffffff;
 }
+body.dark-theme .trial-modal__header i:hover {
+  color: #1894b7;
+}
 body.dark-theme .trial-modal__subtitle {
   color: #ffffff;
 }
@@ -361,4 +364,18 @@ body.dark-theme .cert-modal__header-name {
 }
 body.dark-theme .cert-modal__header i:hover {
   color: #1894b7;
+}
+/* programs-modal */
+body.dark-theme .programs-modal {
+  background: #001a21;
+  color: #ffffff;
+}
+body.dark-theme .programs-modal__header-name {
+  color: #1894b7;
+}
+body.dark-theme .programs-modal__header i:hover {
+  color: #1894b7;
+}
+body.dark-theme .programs-modal__title {
+  color: #ffffff;
 }

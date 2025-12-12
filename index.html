@@ -112,7 +112,12 @@
               нет, уберем Для краткого описание направления, если оно нужно,
               если нет, уберем
             </p>
-            <button class="programs__card-btn btn">Подробнее</button>
+            <button
+              class="programs__card-btn btn"
+              data-open-modal="programs-modal"
+            >
+              Подробнее
+            </button>
           </div>
           <div class="programs__card swiper-slide">
             <img src="./imgs/Rectangle 3.png" alt="Курс IELTS" />
@@ -121,7 +126,12 @@
               Для краткого описание направления, если оно нужно, если нет,
               уберем
             </p>
-            <button class="programs__card-btn btn">Подробнее</button>
+            <button
+              class="programs__card-btn btn"
+              data-open-modal="programs-modal"
+            >
+              Подробнее
+            </button>
           </div>
           <div class="programs__card swiper-slide">
             <img src="./imgs/Rectangle 3.png" alt="Курс IELTS" />
@@ -132,7 +142,12 @@
               Для краткого описание направления, если оно нужно, если нет,
               уберем
             </p>
-            <button class="programs__card-btn btn">Подробнее</button>
+            <button
+              class="programs__card-btn btn"
+              data-open-modal="programs-modal"
+            >
+              Подробнее
+            </button>
           </div>
           <div class="programs__card swiper-slide">
             <img src="./imgs/Rectangle 3.png" alt="Курс IELTS" />
@@ -141,7 +156,12 @@
               Для краткого описание направления, если оно нужно, если нет,
               уберем
             </p>
-            <button class="programs__card-btn btn">Подробнее</button>
+            <button
+              class="programs__card-btn btn"
+              data-open-modal="programs-modal"
+            >
+              Подробнее
+            </button>
           </div>
         </div>
       </div>
@@ -754,6 +774,42 @@
         </ul>
       </div>
     </div>
+    <!-- programs modal -->
+    <div class="programs-modal" data-modal="programs-modal">
+      <div class="programs-modal__header">
+        <p class="programs-modal__header-name">ielts</p>
+        <i class="fa-solid fa-xmark" data-close-modal="programs-modal"></i>
+      </div>
+      <p class="programs-modal__title">
+        Kогда цель — высокий балл, а времени — впритык, нужна система, которая
+        работает. Подготовка к IELTS Academic и General:
+      </p>
+      <div class="programs-modal__desc">
+        <ul>
+          <li>
+            Глубокая проработка всех 4-х модулей: Listening, Reading, Writing,
+            Speaking
+          </li>
+          <li>
+            Глубокая проработка всех 4-х модулей: Listening, Reading, Writing,
+            Speaking
+          </li>
+          <li>
+            Глубокая проработка всех 4-х модулей: Listening, Reading, Writing,
+            Speaking
+          </li>
+        </ul>
+      </div>
+      <p class="programs-modal__time"><b>Длительность:</b> от 3 месяцев</p>
+      <p class="programs-modal__format"><b>Формат: </b> онлайн / офлайн</p>
+      <button class="programs-modal__btn btn" data-open-modal="pro-trial-modal">
+        Записаться
+      </button>
+    </div>
+    <!-- corporate link -->
+     <div class="corp-modal">
+        
+     </div>
   </body>
 
   <!-- Подключаем Swiper JS -->

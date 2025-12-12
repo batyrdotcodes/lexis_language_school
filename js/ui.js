@@ -6,15 +6,15 @@ const openTrialBtn = document.querySelector('[data-open-modal="trial-modal"]');
 const trialModal = document.querySelector('[data-modal="trial-modal"]');
 const trialCloseBtn = document.querySelector('[data-close-modal]');
 
-if (openTrialBtn)
-  openTrialBtn.addEventListener('click', () => {
-    trialModal.classList.add('modal--active');
-    overlay.classList.add('active');
-  });
+openTrialBtn.addEventListener('click', () => {
+  if (openTrialBtn) console.log('tapped');
+  trialModal.classList.add('modal--active');
+  overlay.classList.add('active');
+});
 
 trialCloseBtn.addEventListener('click', () => {
   trialModal.classList.remove('modal--active');
-  overlay.classList.remove('active');
+  //   overlay.classList.remove('active');
 });
 
 overlay.addEventListener('click', () => {
@@ -37,8 +37,8 @@ const sideMenuClose = document.querySelector('.side-menu .fa-xmark');
 sideMenuBtn.addEventListener('click', () => {
   sideMenu.classList.add('open');
   overlay.classList.add('active');
-  if (!mobileMenu.classList.contains('open')) {
-    submenu.classList.remove('open');
+  if (!sideMenu.classList.contains('open')) {
+    sideMenu.classList.remove('open');
   }
 });
 
@@ -119,6 +119,49 @@ overlay.addEventListener('click', () => {
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' || e.key === 'Esc') {
     certModal.classList.remove('modal--active');
+    overlay.classList.remove('active');
+  }
+});
+
+// programs modal
+const openProgramsBtns = document.querySelectorAll(
+  '[data-open-modal="programs-modal"]'
+);
+const programsModal = document.querySelector('[data-modal="programs-modal"]');
+const programsCloseBtn = document.querySelector(
+  '[data-close-modal="programs-modal"]'
+);
+const openProTrialBtn = document.querySelector(
+  '[data-open-modal="pro-trial-modal"]'
+);
+
+openProTrialBtn.addEventListener('click', () => {
+  if (openProTrialBtn) {
+    trialModal.classList.add('modal--active');
+    programsModal.classList.remove('modal--active');
+  }
+});
+
+openProgramsBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    programsModal.classList.add('modal--active');
+    overlay.classList.add('active');
+  });
+});
+
+programsCloseBtn.addEventListener('click', () => {
+  programsModal.classList.remove('modal--active');
+  overlay.classList.remove('active');
+});
+
+overlay.addEventListener('click', () => {
+  programsModal.classList.remove('modal--active');
+  overlay.classList.remove('active');
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' || e.key === 'Esc') {
+    programsModal.classList.remove('modal--active');
     overlay.classList.remove('active');
   }
 });
