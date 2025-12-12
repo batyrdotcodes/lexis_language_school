@@ -187,6 +187,9 @@ body.dark-theme .footer__bottom {
 body.dark-theme .programs__cards {
   color: #ffffff;
 }
+body.dark-theme .programs__card {
+  color: #ffffff;
+}
 /* methods */
 body.dark-theme .methods__title {
   background: #1894b7;
