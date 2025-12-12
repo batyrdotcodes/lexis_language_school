@@ -46,6 +46,22 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
   },
 });
 
+// reviews video
+const reviewsVSwiper = new Swiper('.reviews-v__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: '.reviews-v__btn--next',
+    prevEl: '.reviews-v__btn--prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+  },
+});
+
 // programs
 const programsSwiper = new Swiper('.programs__swiper', {
   slidesPerView: 1,

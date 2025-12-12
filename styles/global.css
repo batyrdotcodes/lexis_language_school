@@ -236,6 +236,13 @@ section {
 .reviews__nav-mob {
   display: none;
 }
+/* reviews video */
+.video-wrapper iframe {
+  width: 100%;
+  min-height: 300px;
+  border-radius: 20px;
+  border: none;
+}
 /* faq */
 #faq {
   width: 100%;
