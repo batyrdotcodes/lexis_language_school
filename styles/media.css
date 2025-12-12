@@ -533,4 +533,15 @@
   .trial-form__btn {
     border-radius: 3px;
   }
+  /* cert */
+  .cert-modal {
+    width: 90%;
+  }
+  .cert-modal__photo {
+    width: 100%;
+    height: auto;
+  }
+  .cert-modal__header-name {
+    font-size: 30px;
+  }
 }

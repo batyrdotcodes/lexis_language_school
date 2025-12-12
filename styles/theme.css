@@ -348,3 +348,14 @@ body.dark-theme .trial-modal__header i {
 body.dark-theme .trial-modal__subtitle {
   color: #ffffff;
 }
+/* cert */
+body.dark-theme .cert-modal {
+  background: #001a21;
+  color: #ffffff;
+}
+body.dark-theme .cert-modal__header-name {
+  color: #1894b7;
+}
+body.dark-theme .cert-modal__header i:hover {
+  color: #1894b7;
+}

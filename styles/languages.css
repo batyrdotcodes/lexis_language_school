@@ -217,18 +217,26 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-
   color: #313131;
   flex: 1;
 }
+.teacher__btn-block {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
 .teacher__btn {
-  width: 100%;
+  width: 96%;
   border-radius: 48px;
   margin-top: 15px;
   font-weight: 600;
   font-size: 18px;
   line-height: 100%;
+  overflow: visible;
 }
 .teacher__btn:hover {
-  scale: 1.05;
+  scale: 1.04;
+}
+.teachers__nav-mob {
+  display: none;
 }
