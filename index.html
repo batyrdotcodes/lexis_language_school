@@ -710,9 +710,9 @@
       </a>
     </div>
     <!-- Пробное занятае модалка -->
-    <div class="trial-modal" data-modal="trial-modal">
-      <div class="trial-modal__header">
-        <h1 class="trial-modal__title">ПРОБНОЕ ЗАНЯТИЕ</h1>
+    <div class="trial-modal modal" data-modal="trial-modal">
+      <div class="modal__header">
+        <h1 class="modal__header-name">ПРОБНОЕ ЗАНЯТИЕ</h1>
         <i class="fa-solid fa-xmark" data-close-modal></i>
       </div>
       <p class="trial-modal__subtitle">
@@ -755,9 +755,9 @@
       </form>
     </div>
     <!-- certificate-modal -->
-    <div class="cert-modal" data-modal="cert-modal">
-      <div class="cert-modal__header">
-        <p class="cert-modal__header-name">Mertht</p>
+    <div class="cert-modal modal" data-modal="cert-modal">
+      <div class="modal__header">
+        <p class="modal__header-name">Mertht</p>
         <i class="fa-solid fa-xmark" data-close-modal="cert-modal"></i>
       </div>
       <img src="./imgs/Rectangle 4.png" alt="" class="cert-modal__photo" />
@@ -775,8 +775,8 @@
       </div>
     </div>
     <!-- programs modal -->
-    <div class="programs-modal" data-modal="programs-modal">
-      <div class="programs-modal__header">
+    <div class="programs-modal modal" data-modal="programs-modal">
+      <div class="modal__header">
         <p class="programs-modal__header-name">ielts</p>
         <i class="fa-solid fa-xmark" data-close-modal="programs-modal"></i>
       </div>
@@ -807,9 +807,16 @@
       </button>
     </div>
     <!-- corporate link -->
-     <div class="corp-modal">
-        
-     </div>
+    <div class="corp-modal modal">
+      <div class="modal__header">
+        <h1 class="corp-modal__header-name">Вы корпоративный клиент?</h1>
+        <i class="fa-solid fa-xmark" data-close-modal="corp-modal"></i>
+      </div>
+      <div class="corp-modal__title">
+        Перейдите на специальную страницу для компаний
+      </div>
+      <button class="corp-modal__btn btn">Перейти</button>
+    </div>
   </body>
 
   <!-- Подключаем Swiper JS -->

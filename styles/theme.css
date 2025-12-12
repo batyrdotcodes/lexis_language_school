@@ -338,44 +338,41 @@ body.dark-theme .mobile-menu li a {
 body.dark-theme .overlay {
   background: #002a36d0;
 }
-/* trial-modal */
-body.dark-theme .trial-modal {
+/* modal */
+body.dark-theme .modal {
   background: #001a21;
 }
-body.dark-theme .trial-modal__title {
+body.dark-theme .modal__header-name {
   color: #1894b7;
 }
-body.dark-theme .trial-modal__header i {
+body.dark-theme .modal__header i {
   color: #ffffff;
 }
-body.dark-theme .trial-modal__header i:hover {
+body.dark-theme .modal__header i:hover {
   color: #1894b7;
 }
+/* trial-modal */
 body.dark-theme .trial-modal__subtitle {
   color: #ffffff;
 }
 /* cert */
 body.dark-theme .cert-modal {
-  background: #001a21;
   color: #ffffff;
-}
-body.dark-theme .cert-modal__header-name {
-  color: #1894b7;
-}
-body.dark-theme .cert-modal__header i:hover {
-  color: #1894b7;
 }
 /* programs-modal */
 body.dark-theme .programs-modal {
-  background: #001a21;
   color: #ffffff;
 }
 body.dark-theme .programs-modal__header-name {
   color: #1894b7;
 }
-body.dark-theme .programs-modal__header i:hover {
+body.dark-theme .programs-modal__title {
+  color: #ffffff;
+}
+/* corp modal */
+body.dark-theme .corp-modal__header-name {
   color: #1894b7;
 }
-body.dark-theme .programs-modal__title {
+body.dark-theme .corp-modal__title {
   color: #ffffff;
 }

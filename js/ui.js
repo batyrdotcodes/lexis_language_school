@@ -165,3 +165,25 @@ document.addEventListener('keydown', e => {
     overlay.classList.remove('active');
   }
 });
+
+// corp modal
+const corpModal = document.querySelector('.corp-modal');
+const corpCloseBtn = document.querySelector('[data-close-modal="corp-modal"]');
+
+function openCorpModal() {
+  corpModal.classList.add('modal--active');
+  overlay.classList.add('active');
+}
+
+function closeCorpModal() {
+  corpModal.classList.remove('modal--active');
+  overlay.classList.remove('active');
+}
+
+setTimeout(openCorpModal, 10000);
+
+corpCloseBtn.addEventListener('click', closeCorpModal);
+overlay.addEventListener('click', closeCorpModal);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeCorpModal();
+});
