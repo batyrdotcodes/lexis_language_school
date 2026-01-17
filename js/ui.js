@@ -187,3 +187,33 @@ overlay.addEventListener('click', closeCorpModal);
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeCorpModal();
 });
+
+// faq modal
+const openFaqBtn = document.querySelector('[data-open-modal="faq-modal"]');
+const faqModal = document.querySelector('[data-modal="faq-modal"]');
+const faqCloseBtn = document.querySelector(
+  '[data-close-modal="faq-modal__close"]'
+);
+
+openFaqBtn.addEventListener('click', () => {
+  if (openFaqBtn) console.log('tapped');
+  faqModal.classList.add('modal--active');
+  overlay.classList.add('active');
+});
+
+faqCloseBtn.addEventListener('click', () => {
+  faqModal.classList.remove('modal--active');
+  overlay.classList.remove('active');
+});
+
+overlay.addEventListener('click', () => {
+  faqModal.classList.remove('modal--active');
+  overlay.classList.remove('active');
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' || e.key === 'Esc') {
+    faqModal.classList.remove('modal--active');
+    overlay.classList.remove('active');
+  }
+});

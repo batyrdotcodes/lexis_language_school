@@ -359,7 +359,9 @@
     <section id="faq">
       <div class="section__header">
         <h1 class="section__titles">Часто задаваемые <span>вопросы</span></h1>
-        <button class="faq__btn btn">Задать вопрос</button>
+        <button class="faq__btn btn" data-open-modal="faq-modal">
+          Задать вопрос
+        </button>
       </div>
       <div class="faq__content">
         <div class="faq__item">
@@ -617,6 +619,18 @@
         Перейдите на специальную страницу для компаний
       </div>
       <button class="corp-modal__btn btn">Перейти</button>
+    </div>
+    <!-- faq modal -->
+    <div class="faq-modal modal" data-modal="faq-modal">
+      <div class="modal__header">
+        <h1 class="modal__header-name">Задайте ваш вопрос</h1>
+        <i class="fa-solid fa-xmark" data-close-modal="faq-modal__close"></i>
+      </div>
+      <textarea type="text" name="name" placeholder="Ваше вопрос"></textarea>
+
+      <button type="submit" class="faq-form__btn btn" disabled>
+        Задать вопрос
+      </button>
     </div>
   </body>
 

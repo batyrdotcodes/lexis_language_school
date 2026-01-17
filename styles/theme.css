@@ -106,6 +106,10 @@ body.dark-theme .trial-form__input {
   background-color: #002a36;
   color: #ffffff;
 }
+body.dark-theme .faq-modal textarea {
+  background-color: #002a36;
+  color: #ffffff;
+}
 /* header */
 body.dark-theme {
   background: #002a36;
