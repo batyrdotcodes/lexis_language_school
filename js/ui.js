@@ -180,7 +180,7 @@ function closeCorpModal() {
   overlay.classList.remove('active');
 }
 
-setTimeout(openCorpModal, 10000);
+setTimeout(openCorpModal, 5000);
 
 corpCloseBtn.addEventListener('click', closeCorpModal);
 overlay.addEventListener('click', closeCorpModal);

@@ -1123,6 +1123,7 @@ section {
   width: 100%;
   max-width: 1320px;
   margin-top: 40px;
+  height: 200px;
 }
 .companies_swiper .swiper-slide {
   display: flex;
@@ -1139,6 +1140,14 @@ section {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+.company::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
 }
 .company img {
   width: 100px;
