@@ -81,6 +81,12 @@
   .header__menu-mobile-btn {
     display: block;
   }
+  .header a {
+    display: none;
+  }
+  .mobile-menu__number {
+    display: block;
+  }
   /* side menu */
   .mobile-menu {
     position: absolute;

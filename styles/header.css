@@ -99,3 +99,6 @@
 .mobile-menu {
   display: none;
 }
+.mobile-menu__number {
+  display: none;
+}
