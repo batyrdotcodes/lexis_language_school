@@ -1119,11 +1119,18 @@ section {
   max-width: 1320px;
   margin: 120px auto 0;
 }
+.companies__container {
+  overflow: hidden;
+  width: 102%;
+  margin-left: -2%;
+}
 .companies_swiper {
   width: 100%;
   max-width: 1320px;
   margin-top: 40px;
   height: 200px;
+  overflow: visible !important;
+  padding: 0 24px;
 }
 .companies_swiper .swiper-slide {
   display: flex;
@@ -1140,14 +1147,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-}
-.company::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  pointer-events: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
 }
 .company img {
   width: 100px;
