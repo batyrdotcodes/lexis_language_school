@@ -52,12 +52,15 @@ overlay.addEventListener('click', () => {
   overlay.classList.remove('active');
 });
 
-sideMenu.querySelectorAll('.submenu-toggle').forEach(toggle => {
-  toggle.addEventListener('click', e => {
-    e.preventDefault();
-    const parent = toggle.closest('.has-submenu');
-    const submenu = parent.querySelector('.submenu');
-    submenu.classList.toggle('open');
+sideMenu.querySelectorAll('.has-submenu').forEach(item => {
+  const submenu = item.querySelector('.submenu');
+
+  item.addEventListener('mouseenter', () => {
+    submenu.classList.add('open');
+  });
+
+  item.addEventListener('mouseleave', () => {
+    submenu.classList.remove('open');
   });
 });
 
